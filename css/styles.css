@@ -1,0 +1,236 @@
+/*       Universal Style       */
+*   {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+body    {
+  font-family: 'Open Sans', sans-serif;
+  
+}
+::placeholder   {
+    text-align: end;
+    font-style: italic;
+}
+label {
+    display: inline-block;
+
+}
+
+
+/*       Header       */
+header {
+    
+    
+    text-align: center;
+    background-image: linear-gradient(#0be678, rgb(9, 44, 16)); 
+    height: 100px;
+}
+header h1 {
+    padding: 25px 0 25px 0;
+    color: white;
+    margin: auto;
+
+}
+h1:hover {
+    color: chartreuse;
+    transition-delay: 2s;
+}
+
+
+/*      Signup      */
+.signup {
+    text-align: center;
+    width: 90vw;
+    margin: auto;
+    border-bottom: solid #0C1722 4px;
+    height: 130px;
+    
+
+}
+.signup h2  {
+    margin: 25px 0 10px 0;
+    color: #0C1722;
+    
+}
+.signup p {
+    color: #5D5E60;
+    font-size: 1.09rem;
+}
+
+
+/*      Contact Information      */
+.contact    {
+    width: 90vw;
+    margin: 3px auto;
+    
+
+}
+
+fieldset {
+    border-style: hidden;
+    
+
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+select {
+    width: 100%;
+    border: none;
+    color: rgb(22, 8, 61);
+    background-color: #e8eeef;
+    height: 50px;
+    margin: 10px 0 10px 0;
+    border-radius: 5px;
+    padding: 10px;
+} 
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+select:focus,
+textarea:focus
+{
+   border: 5px solid green;
+   transition: all 0.5s ease-out;
+}
+
+  
+
+
+#zipcode    {
+    width: 50%;
+    
+}
+
+
+
+/*      Newsletter      */
+
+legend h2 {
+    width: 90vw;
+    border-top: solid #0C1722 2px;
+    padding: 10px 0 10px 0;
+}
+input[type="checkbox"],
+input[type="radio"] {
+
+    margin: 0px 10px 10px 0;
+    
+}
+.newslabel  {
+
+ margin: 5px 0 5px 0;   
+ display: block;
+
+}
+#javascriptnews,
+#plaintext {
+
+    margin-bottom: 20px;
+}
+#topics {
+height: 100px;
+
+}
+#htmlnews   {
+
+    margin-top: 10px;
+
+}
+textarea::placeholder {
+
+    text-align: center;
+
+}
+
+/*      Button     */
+
+button[type="submit"]    {
+
+    height: 50px;
+    width: 90vw;
+    margin: auto;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: 400;
+    background-color: black;
+    color: white;
+
+}
+button[type="submit"]:hover {
+    opacity: .8;
+    color: chartreuse;
+    cursor: pointer;
+}
+
+/*      Footer     */
+footer {
+    text-align: center;
+    font-style: italic;
+
+}
+/*      Media Queries    */
+
+@media (min-width: 768px)   {
+
+    .signup,
+    .contact,
+    button[type="submit"],    
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    select,
+    textarea,
+    fieldset,
+    legend h2    {
+        
+        max-width: 50vw;
+        margin: auto;
+    }
+    header {
+        height: 70px;
+
+
+    }
+    h1 {
+        font-size: 1.2rem;
+        font-weight: 800;
+
+
+    }
+    textarea {
+        height: 50px;
+        margin: 10px 0 10px 0;
+
+    }
+    #zipcode {
+        width: 25%;
+        margin-right: 45%;
+
+    }
+    .info {
+        display: flex;
+        justify-content: space-between;
+        margin: 10px 0 10px 0;
+       
+
+
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    select {
+        width: 70%;
+        margin: 0;
+        
+    }
+   .infolabel {
+    width: 30%;
+
+   }
+}
